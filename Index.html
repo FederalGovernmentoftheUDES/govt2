@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDES Government & UDES Encyclopedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: normal;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #003366;
+        }
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Banner -->
+    <header>
+        UDES Government & UDES Encyclopedia
+        <div class="links">
+            <a href="#link-directory">Link Directory</a>
+            <a href="#encyclopedia-pages">Encyclopedia All Pages</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to the UDES Government & Encyclopedia</h1>
+        <div class="content">
+            <p>This is the official portal for the United Democratic Empire of Sopris (UDES) government and its encyclopedia. Here you can find information about the government structure, policies, and historical records of the UDES.</p>
+            <p>The UDES Encyclopedia is a comprehensive resource containing details on key figures, events, and institutions related to the empire. Stay informed and explore the rich history and current operations of the UDES.</p>
+        </div>
+
+        <!-- Placeholder for additional sections -->
+        <div id="link-directory" class="content">
+            <h2>Link Directory</h2>
+            <p>A complete list of useful links for navigating UDES government portals and resources.<li><a href="resources.html">here</a></li>
+        </div>
+
+        <div id="encyclopedia-pages" class="content">
+            <h2>Encyclopedia All Pages</h2>
+            <p>Browse through the entire</p><li><a href="Encyclopedia.html">Encyclopedia</a></li>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 UDES Government & UDES Encyclopedia. All rights reserved.
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
